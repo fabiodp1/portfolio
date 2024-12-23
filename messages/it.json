@@ -1,0 +1,81 @@
+{
+    "person": {
+        "role": "Ingegnere del design"
+    },
+    "newsletter": {
+        "title": "Iscriviti alla Newsletter di {firstName}",
+        "description": "Ogni tanto scrivo di design, tecnologia e condivido pensieri sull'intersezione tra creatività e ingegneria",
+        "button": "Iscriviti"
+    },
+    "home": {
+        "label": "Home",
+        "title": "Portfolio di {name}",
+        "description": "Sito portfolio che mostra il mio lavoro come {role}",
+        "headline": "Ingegnere del design e creatrice",
+        "subline": "Sono Selene, un'ingegnere del design presso FLY, dove creo esperienze utente intuitive. Nel tempo libero, realizzo i miei progetti."
+    },
+    "about": {
+        "label": "Chi sono",
+        "title": "Scopri chi sono",
+        "description": "Conosci {name}, {role} da {location}",
+        "intro": {
+            "title": "Introduzione",
+            "description": "Selene è un'ingegnere del design con base a Jakarta, appassionata di trasformare sfide complesse in soluzioni di design semplici ed eleganti. Il suo lavoro spazia dalle interfacce digitali alle esperienze interattive e alla convergenza tra design e tecnologia."
+        },
+        "work": {
+            "title": "Esperienze lavorative",
+            "experiences": {
+                "FLY": {
+                    "timeframe": "2022 - Presente",
+                    "role": "Ingegnere del design senior",
+                    "achievements": "Ridisegnato l'UI/UX per la piattaforma FLY, ottenendo un aumento del 20% nell'engagement degli utenti e tempi di caricamento più rapidi del 30%; Guidato l'integrazione di strumenti AI nei flussi di lavoro di design, consentendo ai designer di iterare il 50% più velocemente."
+                },
+                "Creativ3": {
+                    "timeframe": "2018 - 2022",
+                    "role": "Lead Designer",
+                    "achievements": "Sviluppato un sistema di design che ha unificato il brand su più piattaforme, migliorando la coerenza del design del 40%; Guidato un team cross-funzionale per il lancio di una nuova linea di prodotti, contribuendo a un aumento del 15% del fatturato aziendale."
+                }
+            }
+        },
+        "studies": {
+            "title": "Studi",
+            "institutions": {
+                "University of Jakarta": {
+                    "description": "Ha studiato ingegneria del software."
+                },
+                "Build the Future": {
+                    "description": "Ha studiato marketing online e personal branding."
+                }
+            }
+        },
+        "technical": {
+            "title": "Competenze tecniche",
+            "skills": {
+                "Figma": {
+                    "description": "Capace di prototipare in Figma con Once UI a velocità incredibile."
+                },
+                "Nextjs": {
+                    "description": "Costruzione di app di nuova generazione con Next.js + Once UI + Supabase."
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Scrivo di design e tecnologia...",
+        "description": "Leggi cosa ha fatto recentemente {name}"
+    },
+    "work": {
+        "label": "Progetti",
+        "title": "I miei progetti",
+        "description": "Progetti di design e sviluppo di {name}"
+    },
+    "gallery": {
+        "label": "Galleria",
+        "title": "La mia galleria fotografica",
+        "description": "Una collezione fotografica di {name}"
+    },
+    "projectCard": {
+        "label": "Leggi il caso di studio"
+    }
+}

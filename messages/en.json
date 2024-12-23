@@ -1,0 +1,108 @@
+{
+    "person": {
+        "role": "Web Developer"
+    },
+    "newsletter": {
+        "title": "Subscribe to {firstName}'s Newsletter",
+        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
+        "button": "Sign up"
+    },
+    "technical": {
+        "label": "Tech skills",
+        "title": "Tech skills",
+        "description": "This are the technologies that I usually play with."
+    },
+    "home": {
+        "label": "Home",
+        "title": "{name}'s Portfolio",
+        "description": "Portfolio website showcasing my work as a {role}",
+        "headline": "Web Developer",
+        "subline": "Hi! I'm Fabio, a web developer at 7Circle | Var Group, , where I craft intuitive web applications. After hours, I play the drums, bass guitar and videogames."
+    },
+    "about": {
+        "label": "About",
+        "title": "Get to know me",
+        "description": "Meet {name}, {role} from {location}",
+        "intro": {
+            "title": "Introduction",
+            "description": "After a professional past in the economic / tourism sector, I embarked on a self-taught course of study in CS until I became a developer, {workingYears} years now, initially focused on the front-end but gradually extending my knowledge also to the back-end and deploy, thanks to the projects undertaken during work experience and personal preference for the business logic of applications. Constantly updated and curious to try and learn new technologies."
+        },
+        "work": {
+            "title": "Work Experience",
+            "experiences": {
+                "7Circle": {
+                    "timeframe": "2020 - Present",
+                    "role": "Full Stack Web Developer",
+                    "achievements": "Developing responsive web applications focusing on all the development process, from analysis to deployment but with a main focus on front-end."
+                },
+                "IdeaSmart": {
+                    "timeframe": "2016 - 2016",
+                    "role": "Web Master, Social Media Manager, Designer Freelance",
+                    "achievements": "Web page maintenance and management, events and social media management, ideation and creation of web designs. The Ideasmart logo is one of my creations. Suspended activity in order to be able to devote more time to study."
+                },
+                "Australia": {
+                    "timeframe": "2013 - 2014",
+                    "role": "Several",
+                    "achievements": "After having traveled all over the country working in several companies, including communication companies, I had the opportunity to gain experience in working environments different from those I was used to and to deepen my knowledge of English."
+                },
+                "LaDarsena": {
+                    "timeframe": "2011 - 2012",
+                    "role": "Destination Manager, Social-media Manager, Booking Manager",
+                    "achievements": "Travel planning management (South America and North Africa), communication, booking, customer care."
+                },
+                "Others": {
+                    "timeframe": "2001 - 2020",
+                    "role": "Hotel Receptionist, Catering waiter",
+                    "achievements": "In order to finance my training and when necessary."
+                }
+
+
+            }
+        },
+        "studies": {
+            "title": "Studies",
+            "institutions": {
+                "HarvardX": {
+                    "course": "CS50 Introduction to Computer Science",
+                    "description": "E-learning training path created by Harvard University, aimed, through various programming languages (C, Python, Javascript and others) and challenges to be faced, to provide the bases and cognitive mechanisms for the creation of efficient and effective programs and algorithms."
+                },
+                "freeCodeCamp": {
+                    "description": "US E-learning training course."
+                },
+                "caFoscari": {
+                    "course": "Economics and Management of the Touristic Services",
+                    "description": "Bachelor's Degree on management, design and planification of touristic products and systems, business management."
+                }
+            }
+        },
+        "technical": {
+            "title": "Technical skills",
+            "skills": {
+                "Figma": {
+                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
+                },
+                "Nextjs": {
+                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Writing about design and tech...",
+        "description": "Read what {name} has been up to recently"
+    },
+    "work": {
+        "label": "Work",
+        "title": "My projects",
+        "description": "Design and dev projects by {name}"
+    },
+    "gallery": {
+        "label": "Gallery",
+        "title": "My photo gallery",
+        "description": "A photo collection by {name}"
+    },
+    "projectCard": {
+        "label": "Read Case Study"
+    }
+}
