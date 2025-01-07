@@ -92,8 +92,7 @@ export default function Technical({
       >
         <Flex direction="column" fillWidth maxWidth="s">
           <RevealFx
-            translateY="8"
-            delay={0.2}
+            translateY="4"
             fillWidth
             justifyContent="flex-start"
             paddingBottom="m"
@@ -105,7 +104,15 @@ export default function Technical({
             >
               {technical.description}
             </Text>
-            <Grid columns="repeat(3, 1fr)" gap="40" padding="8" marginTop="32">
+          </RevealFx>
+          <RevealFx
+            translateY="8"
+            delay={0.2}
+            fillWidth
+            justifyContent="flex-start"
+            paddingBottom="m"
+          >
+            <Grid columns="repeat(3, 1fr)" gap="40" padding="8">
               {technical.skills.map((skill) => (
                 <Flex>
                   <Logo
@@ -119,7 +126,7 @@ export default function Technical({
                 </Flex>
               ))}
             </Grid>
-          </RevealFx>
+            </RevealFx>
         </Flex>
       </Flex>
     </Flex>
