@@ -4,6 +4,7 @@ import {
   Heading,
   Logo,
   RevealFx,
+  SmartLink,
   Text,
 } from "@/once-ui/components";
 import { baseURL, renderContent } from "@/app/resources";
@@ -114,15 +115,18 @@ export default function Technical({
             justifyContent="flex-start"
             paddingTop="m"
           >
-            <Grid columns="repeat(3, 1fr)" gap="40" mobileColumns="1col">
+            <Grid columns="repeat(3, 1fr)" gap="40" mobileColumns="2col">
               {technical.skills.map((skill) => (
+                <SmartLink
+                href={skill.url}
+                iconSize="l"
+              >
                 <Flex>
                   <Logo
                     size="l"
                     wordmark={false}
                     icon
                     iconSrc={skill.image.src}
-                    href={skill.url}
                   />
                   <Text
                     wrap="balance"
@@ -131,6 +135,7 @@ export default function Technical({
                     variant="heading-default-xl"
                   ><strong>{skill.title}</strong></Text>
                 </Flex>
+                </SmartLink>
               ))}
             </Grid>
             </RevealFx>
