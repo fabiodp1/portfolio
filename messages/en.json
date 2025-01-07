@@ -1,7 +1,7 @@
 {
     "person": {
         "role": "Web Developer",
-        "location": "Italy/Padua"
+        "location": "Italy / Padua"
     },
     "newsletter": {
         "title": "Subscribe to {firstName}'s Newsletter",
