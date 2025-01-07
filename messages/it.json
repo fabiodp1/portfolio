@@ -1,61 +1,75 @@
 {
     "person": {
-        "role": "Ingegnere del design"
+        "role": "Sviluppatore Web"
     },
     "newsletter": {
         "title": "Iscriviti alla Newsletter di {firstName}",
-        "description": "Ogni tanto scrivo di design, tecnologia e condivido pensieri sull'intersezione tra creatività e ingegneria",
+        "description": "Ogni tanto scrivo di design, tecnologia e condivido riflessioni sull'intersezione tra creatività e ingegneria",
         "button": "Iscriviti"
+    },
+    "technical": {
+        "label": "Competenze tecniche",
+        "title": "Competenze tecniche",
+        "description": "Queste sono le tecnologie con cui solitamente lavoro:"
     },
     "home": {
         "label": "Home",
         "title": "Portfolio di {name}",
         "description": "Sito portfolio che mostra il mio lavoro come {role}",
-        "headline": "Ingegnere del design e creatrice",
-        "subline": "Sono Selene, un'ingegnere del design presso FLY, dove creo esperienze utente intuitive. Nel tempo libero, realizzo i miei progetti."
+        "headline": "Sviluppatore Web",
+        "subline": "Ciao! Sono Fabio, uno sviluppatore web presso 7Circle | Var Group, dove creo applicazioni web intuitive. Nel tempo libero suono la batteria, il basso e gioco ai videogiochi."
     },
     "about": {
         "label": "Chi sono",
-        "title": "Scopri chi sono",
-        "description": "Conosci {name}, {role} da {location}",
+        "title": "Conoscimi meglio",
+        "description": "Conosci {name}, {role} di {location}",
         "intro": {
             "title": "Introduzione",
-            "description": "Selene è un'ingegnere del design con base a Jakarta, appassionata di trasformare sfide complesse in soluzioni di design semplici ed eleganti. Il suo lavoro spazia dalle interfacce digitali alle esperienze interattive e alla convergenza tra design e tecnologia."
+            "description": "Dopo un passato professionale nel settore economico/turistico, ho intrapreso un percorso di studio autodidatta in informatica fino a diventare sviluppatore, da {workingYears} anni, inizialmente focalizzato sul front-end ma estendendo gradualmente le mie conoscenze anche al back-end e al deploy, grazie ai progetti intrapresi durante l'esperienza lavorativa e alla mia preferenza personale per la logica di business delle applicazioni. Costantemente aggiornato e curioso di provare e apprendere nuove tecnologie."
         },
         "work": {
             "title": "Esperienze lavorative",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Presente",
-                    "role": "Ingegnere del design senior",
-                    "achievements": "Ridisegnato l'UI/UX per la piattaforma FLY, ottenendo un aumento del 20% nell'engagement degli utenti e tempi di caricamento più rapidi del 30%; Guidato l'integrazione di strumenti AI nei flussi di lavoro di design, consentendo ai designer di iterare il 50% più velocemente."
+                "7Circle": {
+                    "timeframe": "2020 - Presente",
+                    "role": "Sviluppatore Web Full Stack",
+                    "achievements": "Sviluppo di applicazioni web responsive focalizzandomi su tutto il processo di sviluppo, dall'analisi al deploy, ma con un focus principale sul front-end."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Lead Designer",
-                    "achievements": "Sviluppato un sistema di design che ha unificato il brand su più piattaforme, migliorando la coerenza del design del 40%; Guidato un team cross-funzionale per il lancio di una nuova linea di prodotti, contribuendo a un aumento del 15% del fatturato aziendale."
+                "IdeaSmart": {
+                    "timeframe": "2016 - 2016",
+                    "role": "Web Master, Social Media Manager, Designer Freelance",
+                    "achievements": "Manutenzione e gestione di pagine web, gestione eventi e social media, ideazione e creazione di design web. Il logo Ideasmart è una mia creazione. Attività sospesa per poter dedicare più tempo allo studio."
+                },
+                "Australia": {
+                    "timeframe": "2013 - 2014",
+                    "role": "Vari",
+                    "achievements": "Dopo aver viaggiato in tutto il paese lavorando in diverse aziende, tra cui aziende di comunicazione, ho avuto l'opportunità di fare esperienza in ambienti lavorativi diversi da quelli a cui ero abituato e di approfondire la mia conoscenza dell'inglese."
+                },
+                "LaDarsena": {
+                    "timeframe": "2011 - 2012",
+                    "role": "Destination Manager, Social-media Manager, Booking Manager",
+                    "achievements": "Gestione della pianificazione dei viaggi (Sud America e Nord Africa), comunicazione, prenotazioni, assistenza clienti."
+                },
+                "Others": {
+                    "timeframe": "2001 - 2020",
+                    "role": "Receptionist in hotel, Cameriere catering",
+                    "achievements": "Per finanziare i miei studi e quando necessario."
                 }
             }
         },
         "studies": {
             "title": "Studi",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Ha studiato ingegneria del software."
+                "HarvardX": {
+                    "course": "CS50 Introduzione all'Informatica",
+                    "description": "Percorso di formazione e-learning creato dall'Università di Harvard, volto, attraverso vari linguaggi di programmazione (C, Python, Javascript e altri) e sfide da affrontare, a fornire le basi e i meccanismi cognitivi per la creazione di programmi e algoritmi efficienti ed efficaci."
                 },
-                "Build the Future": {
-                    "description": "Ha studiato marketing online e personal branding."
-                }
-            }
-        },
-        "technical": {
-            "title": "Competenze tecniche",
-            "skills": {
-                "Figma": {
-                    "description": "Capace di prototipare in Figma con Once UI a velocità incredibile."
+                "freeCodeCamp": {
+                    "description": "Corso di formazione e-learning statunitense."
                 },
-                "Nextjs": {
-                    "description": "Costruzione di app di nuova generazione con Next.js + Once UI + Supabase."
+                "caFoscari": {
+                    "course": "Economia e Gestione dei Servizi Turistici",
+                    "description": "Laurea Triennale in gestione, progettazione e pianificazione di prodotti e sistemi turistici, gestione aziendale."
                 }
             }
         }
@@ -63,17 +77,17 @@
     "blog": {
         "label": "Blog",
         "title": "Scrivo di design e tecnologia...",
-        "description": "Leggi cosa ha fatto recentemente {name}"
+        "description": "Leggi cosa ha fatto di recente {name}"
     },
     "work": {
-        "label": "Progetti",
+        "label": "Lavori",
         "title": "I miei progetti",
         "description": "Progetti di design e sviluppo di {name}"
     },
     "gallery": {
         "label": "Galleria",
         "title": "La mia galleria fotografica",
-        "description": "Una collezione fotografica di {name}"
+        "description": "Una raccolta di foto di {name}"
     },
     "projectCard": {
         "label": "Leggi il caso di studio"

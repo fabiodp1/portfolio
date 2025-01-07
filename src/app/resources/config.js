@@ -13,9 +13,7 @@ const routes = {
     '/':        true,
     '/about':   true,
     '/technical':   true,
-    '/work':    false,
-    '/blog':    false,
-    '/gallery': false,
+    '/work':    false
 }
 
 // Enable password protection on selected routes

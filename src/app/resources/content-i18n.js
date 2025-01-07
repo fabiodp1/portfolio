@@ -216,7 +216,7 @@ const createI18nContent = (t) => {
     skills: [
       {
         title: "Vue.js",
-        url: "",
+        url: "https://vuejs.org/",
         image: {
           src: "/images/vue.png",
           alt: "Vue.js icon",
@@ -224,7 +224,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "TypeScript",
-        url: "",
+        url: "https://www.typescriptlang.org/",
         image: {
           src: "/images/typescript.png",
           alt: "TypeScript icon",
@@ -232,7 +232,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "Pinia",
-        url: "",
+        url: "https://pinia.vuejs.org/",
         image: {
           src: "/images/pinia.png",
           alt: "Pinia icon",
@@ -240,7 +240,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "React JS",
-        url: "",
+        url: "https://react.dev/",
         image: {
           src: "/images/react.png",
           alt: "React JS icon",
@@ -248,7 +248,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "Next.js",
-        url: "",
+        url: "https://nextjs.org/",
         image: {
           src: "/images/next.png",
           alt: "Next.js icon",
@@ -256,7 +256,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "MobX",
-        url: "",
+        url: "https://mobx.js.org/",
         image: {
           src: "/images/mobx.png",
           alt: "MobX icon",
@@ -264,7 +264,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "Vite",
-        url: "",
+        url: "https://vite.dev/",
         image: {
           src: "/images/vite.png",
           alt: "Vite icon",
@@ -272,7 +272,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "Vitest",
-        url: "",
+        url: "https://vitest.dev/",
         image: {
           src: "/images/vitest.png",
           alt: "Vitest icon",
@@ -280,7 +280,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "Cypress",
-        url: "",
+        url: "https://www.cypress.io/",
         image: {
           src: "/images/cypress.png",
           alt: "Cypress icon",
@@ -288,7 +288,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "C#",
-        url: "",
+        url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
         image: {
           src: "/images/csharp.png",
           alt: "C# icon",
@@ -296,7 +296,7 @@ const createI18nContent = (t) => {
       },
       {
         title: ".NET",
-        url: "",
+        url: "https://dotnet.microsoft.com/en-us/",
         image: {
           src: "/images/dotnet.png",
           alt: ".NET icon",
@@ -304,7 +304,7 @@ const createI18nContent = (t) => {
       },
       {
         title: "PostgreSQL",
-        url: "",
+        url: "https://www.postgresql.org/",
         image: {
           src: "/images/postgres.png",
           alt: "PostgreSQL icon",
