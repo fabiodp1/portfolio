@@ -1,407 +1,345 @@
 import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
-    const person = {
-        firstName: 'Fabio',
-        lastName:  'Di Pane',
-        get name() {
-            return `${this.firstName} ${this.lastName}`;
-        },
-        role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Europe/Rome',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Italian', 'Spanish']  // optional: Leave the array empty if you don't want to display languages
-    }
+  const person = {
+    firstName: "Fabio",
+    lastName: "Di Pane",
+    get name() {
+      return `${this.firstName} ${this.lastName}`;
+    },
+    role: t("person.role"),
+    avatar: "/images/avatar.jpg",
+    location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ["English", "Italian", "Spanish"], // optional: Leave the array empty if you don't want to display languages
+  };
 
-    const newsletter = {
-        display: false,
-        title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
-        description: <>{t("newsletter.description")}</>
-    }
+  const newsletter = {
+    display: false,
+    title: <>{t("newsletter.title", { firstName: person.firstName })}</>,
+    description: <>{t("newsletter.description")}</>,
+  };
 
-    const social = [
-        // Links are automatically displayed.
-        // Import new icons in /once-ui/icons.ts
+  const social = [
+    // Links are automatically displayed.
+    // Import new icons in /once-ui/icons.ts
+    {
+      name: "GitHub",
+      icon: "github",
+      link: "https://github.com/fabiodp1",
+    },
+    {
+      name: "LinkedIn",
+      icon: "linkedin",
+      link: "https://www.linkedin.com/in/fabio-di-pane-39971222/",
+    },
+    {
+      name: "X",
+      icon: "x",
+      link: "",
+    },
+    {
+      name: "Email",
+      icon: "email",
+      link: "mailto:dipane.fabio@gmail.com",
+    },
+  ];
+
+  const home = {
+    label: t("home.label"),
+    title: t("home.title", { name: person.name }),
+    description: t("home.description", { role: person.role }),
+    headline: <>{t("home.headline")}</>,
+    subline: <>{t("home.subline")}</>,
+  };
+
+  const workingYears =
+    new Date().getFullYear() - new Date("2020").getFullYear();
+
+  const about = {
+    label: t("about.label"),
+    title: t("about.title"),
+    description: t("about.description", {
+      name: person.name,
+      role: person.role,
+      location: person.location,
+    }),
+    tableOfContent: {
+      display: true,
+      subItems: true,
+    },
+    avatar: {
+      display: true,
+    },
+    calendar: {
+      display: false,
+      link: "https://cal.com",
+    },
+    intro: {
+      display: true,
+      title: t("about.intro.title"),
+      description: <>{t("about.intro.description", { workingYears })}</>,
+    },
+    work: {
+      display: true, // set to false to hide this section
+      title: t("about.work.title"),
+      experiences: [
         {
-            name: 'GitHub',
-            icon: 'github',
-            link: 'https://github.com/fabiodp1',
+          company: "7Circle | Var Group",
+          timeframe: t("about.work.experiences.7Circle.timeframe"),
+          role: t("about.work.experiences.7Circle.role"),
+          achievements: t("about.work.experiences.7Circle.achievements").split(
+            ";"
+          ),
+          location: "Padua | Italy",
+          images: [
+            // optional: leave the array empty if you don't want to display images
+            {
+              src: "/images/7Circle.jpg",
+              alt: "7Circle",
+              width: 16,
+              height: 9,
+            },
+          ],
         },
         {
-            name: 'LinkedIn',
-            icon: 'linkedin',
-            link: 'https://www.linkedin.com/in/fabio-di-pane-39971222/',
+          company: "IdeaSmart",
+          timeframe: t("about.work.experiences.IdeaSmart.timeframe"),
+          role: t("about.work.experiences.IdeaSmart.role"),
+          achievements: t(
+            "about.work.experiences.IdeaSmart.achievements"
+          ).split(";"),
+          location: "Padua, Italy",
+          images: [],
         },
         {
-            name: 'X',
-            icon: 'x',
-            link: '',
+          company: "Australia",
+          timeframe: t("about.work.experiences.Australia.timeframe"),
+          role: t("about.work.experiences.Australia.role"),
+          achievements: t(
+            "about.work.experiences.Australia.achievements"
+          ).split(";"),
+          location: "Australia | all around country",
+          images: [
+            {
+              src: "/images/australia.jpg",
+              alt: "Australia on the road",
+              width: 16,
+              height: 9,
+            },
+          ],
         },
         {
-            name: 'Email',
-            icon: 'email',
-            link: 'mailto:dipane.fabio@gmail.com',
+          company: "LaDarsena Travels",
+          timeframe: t("about.work.experiences.LaDarsena.timeframe"),
+          role: t("about.work.experiences.LaDarsena.role"),
+          achievements: t(
+            "about.work.experiences.LaDarsena.achievements"
+          ).split(";"),
+          location: "Milan | Italy",
+          images: [],
         },
-    ]
-
-    const home = {
-        label: t("home.label"),
-        title: t("home.title", {name: person.name}),
-        description: t("home.description", {role: person.role}),
-        headline: <>{t("home.headline")}</>,
-        subline: <>{t("home.subline")}</>
-    }
-
-    const workingYears = new Date().getFullYear() - new Date('2020').getFullYear();
-
-    const about = {
-        label: t("about.label"),
-        title: t("about.title"),
-        description: t("about.description", {name: person.name, role: person.role, location: person.location}),
-        tableOfContent: {
-            display: true,
-            subItems: true
+        {
+          company: "Others",
+          timeframe: t("about.work.experiences.Others.timeframe"),
+          role: t("about.work.experiences.Others.role"),
+          achievements: t("about.work.experiences.Others.achievements").split(
+            ";"
+          ),
+          location: "Venice, Rome, Turin, Padua | Italy",
+          images: [],
         },
-        avatar: {
-            display: true
+      ],
+    },
+    studies: {
+      display: true, // set to false to hide this section
+      title: "Studies",
+      institutions: [
+        {
+          name: "HarvardX",
+          course: <>{t(`about.studies.institutions.HarvardX.course`)}</>,
+          description: (
+            <>{t(`about.studies.institutions.HarvardX.description`)}</>
+          ),
+          images: [
+            {
+              src: "/images/cs50.jpg",
+              alt: "CS50 certificate",
+              width: 16,
+              height: 9,
+            },
+          ],
         },
-        calendar: {
-            display: false,
-            link: 'https://cal.com'
+        {
+          name: "freeCodeCamp",
+          description: (
+            <>{t(`about.studies.institutions.freeCodeCamp.description`)}</>
+          ),
+          images: [
+            {
+              src: "/images/freeCodeCamp-1.png",
+              alt: "freeCodeCamp certificate",
+              width: 16,
+              height: 9,
+            },
+            {
+              src: "/images/freeCodeCamp-2.png",
+              alt: "freeCodeCamp certificate",
+              width: 16,
+              height: 9,
+            },
+
+            {
+              src: "/images/freeCodeCamp-3.png",
+              alt: "freeCodeCamp certificate",
+              width: 16,
+              height: 9,
+            },
+          ],
         },
-        intro: {
-            display: true,
-            title: t("about.intro.title"),
-            description: <>{t("about.intro.description", {workingYears})}</>
+        {
+          name: "Cà Foscari Univercity of Venice",
+          course: <>{t(`about.studies.institutions.caFoscari.course`)}</>,
+          description: (
+            <>{t(`about.studies.institutions.caFoscari.description`)}</>
+          ),
+          images: [],
         },
-        work: {
-            display: true, // set to false to hide this section
-            title: t("about.work.title"),
-            experiences: [
-                {
-                    company: '7Circle | Var Group',
-                    timeframe: t("about.work.experiences.7Circle.timeframe"),
-                    role: t("about.work.experiences.7Circle.role"),
-                    achievements: t("about.work.experiences.7Circle.achievements").split(";"),
-                    location: 'Padua | Italy',
-                    images: [ // optional: leave the array empty if you don't want to display images
-                        {
-                            src: '/images/7Circle.jpg',
-                            alt: '7Circle',
-                            width: 16,
-                            height: 9
-                        }
-                    ]
-                },
-                {
-                    company: 'IdeaSmart',
-                    timeframe: t("about.work.experiences.IdeaSmart.timeframe"),
-                    role: t("about.work.experiences.IdeaSmart.role"),
-                    achievements: t("about.work.experiences.IdeaSmart.achievements").split(";"),
-                    location: 'Padua, Italy',
-                    images: [ ]
-                },
-                {
-                    company: 'Australia',
-                    timeframe: t("about.work.experiences.Australia.timeframe"),
-                    role: t("about.work.experiences.Australia.role"),
-                    achievements: t("about.work.experiences.Australia.achievements").split(";"),
-                    location: 'Australia | all around country',
-                    images: [{
-                        src: '/images/australia.jpg',
-                        alt: 'Australia on the road',
-                        width: 16,
-                        height: 9
-                    }]
-                },
-                {
-                    company: 'LaDarsena Travels',
-                    timeframe: t("about.work.experiences.LaDarsena.timeframe"),
-                    role: t("about.work.experiences.LaDarsena.role"),
-                    achievements: t("about.work.experiences.LaDarsena.achievements").split(";"),
-                    location: 'Milan | Italy',
-                    images: []
-                },
-                {
-                    company: 'Others',
-                    timeframe: t("about.work.experiences.Others.timeframe"),
-                    role: t("about.work.experiences.Others.role"),
-                    achievements: t("about.work.experiences.Others.achievements").split(";"),
-                    location: 'Venice, Rome, Turin, Padua | Italy',
-                    images: []
-                }
+      ],
+    },
+  };
 
-            ]
+  const technical = {
+    display: true, // set to false to hide this section
+    label: t("technical.label"),
+    title: t("technical.title"),
+    description: t("technical.description"),
+    skills: [
+      {
+        title: "Vue.js",
+        url: "",
+        image: {
+          src: "/images/vue.png",
+          alt: "Vue.js icon",
         },
-        studies: {
-					display: true, // set to false to hide this section
-					title: 'Studies',
-					institutions: [
-					{
-							name: 'HarvardX',
-							course: <>{t(`about.studies.institutions.HarvardX.course`)}</>,
-							description: <>{t(`about.studies.institutions.HarvardX.description`)}</>,
-							images: [{
-									src: '/images/cs50.jpg',
-									alt: 'CS50 certificate',
-									width: 16,
-									height: 9
-							}]
-					},
-					{
-							name: 'freeCodeCamp',
-							description: <>{t(`about.studies.institutions.freeCodeCamp.description`)}</>,
-							images: [{
-									src: '/images/freeCodeCamp-1.png',
-									alt: 'freeCodeCamp certificate',
-									width: 16,
-									height: 9
-							},
-							{
-									src: '/images/freeCodeCamp-2.png',
-									alt: 'freeCodeCamp certificate',
-									width: 16,
-									height: 9
-							},
-							
-							{
-									src: '/images/freeCodeCamp-3.png',
-									alt: 'freeCodeCamp certificate',
-									width: 16,
-									height: 9
-							}]},
-							{
-									name: 'Cà Foscari Univercity of Venice',
-									course: <>{t(`about.studies.institutions.caFoscari.course`)}</>,
-									description: <>{t(`about.studies.institutions.caFoscari.description`)}</>,
-									images: []
-							}
-					]
-        }
-    };
+      },
+      {
+        title: "TypeScript",
+        url: "",
+        image: {
+          src: "/images/typescript.png",
+          alt: "TypeScript icon",
+        },
+      },
+      {
+        title: "Pinia",
+        url: "",
+        image: {
+          src: "/images/pinia.png",
+          alt: "Pinia icon",
+        },
+      },
+      {
+        title: "React JS",
+        url: "",
+        image: {
+          src: "/images/react.png",
+          alt: "React JS icon",
+        },
+      },
+      {
+        title: "Next.js",
+        url: "",
+        image: {
+          src: "/images/next.png",
+          alt: "Next.js icon",
+        },
+      },
+      {
+        title: "MobX",
+        url: "",
+        image: {
+          src: "/images/mobx.png",
+          alt: "MobX icon",
+        },
+      },
+      {
+        title: "Vite",
+        url: "",
+        image: {
+          src: "/images/vite.png",
+          alt: "Vite icon",
+        },
+      },
+      {
+        title: "Vitest",
+        url: "",
+        image: {
+          src: "/images/vitest.png",
+          alt: "Vitest icon",
+        },
+      },
+      {
+        title: "Cypress",
+        url: "",
+        image: {
+          src: "/images/cypress.png",
+          alt: "Cypress icon",
+        },
+      },
+      {
+        title: "C#",
+        url: "",
+        image: {
+          src: "/images/csharp.png",
+          alt: "C# icon",
+        },
+      },
+      {
+        title: ".NET",
+        url: "",
+        image: {
+          src: "/images/dotnet.png",
+          alt: ".NET icon",
+        },
+      },
+      {
+        title: "PostgreSQL",
+        url: "",
+        image: {
+          src: "/images/postgres.png",
+          alt: "PostgreSQL icon",
+        },
+      },
+    ],
+  };
 
-    const technical = {
-			display: true, // set to false to hide this section
-			label: t("technical.label"),
-			title: t("technical.title"),
-			description: t("technical.description"),
-			skills: [
-				{
-					title: 'Vue.js',
-					url: '',
-					image: 
-						{
-										src: '/images/vue.png',
-										alt: 'Vue.js icon'
-						}
-				},
-				{
-					title: 'TypeScript',
-					url: '',
-					image: 
-						{
-										src: '/images/typescript.png',
-										alt: 'TypeScript icon'
-						}
-				},
-				{
-					title: 'Pinia',
-					url: '',
-					image: 
-						{
-										src: '/images/pinia.png',
-										alt: 'Pinia icon'
-						}
-				},
-				{
-					title: 'React JS',
-					url: '',
-					image: 
-						{
-										src: '/images/react.png',
-										alt: 'React JS icon'
-						}
-				},
-				{
-					title: 'Next.js',
-					url: '',
-					image: 
-						{
-										src: '/images/next.png',
-										alt: 'Next.js icon'
-						}
-				},
-				{
-					title: 'MobX',
-					url: '',
-					image: 
-						{
-										src: '/images/mobx.png',
-										alt: 'MobX icon'
-						}
-				},
-				{
-					title: 'Vite',
-					url: '',
-					image: 
-						{
-										src: '/images/vite.png',
-										alt: 'Vite icon'
-						}
-				},
-				{
-					title: 'Vitest',
-					url: '',
-					image: 
-						{
-										src: '/images/vitest.png',
-										alt: 'Vitest icon'
-						}
-				},
-				{
-					title: 'Cypress',
-					url: '',
-					image: 
-						{
-										src: '/images/cypress.png',
-										alt: 'Cypress icon'
-						}
-				},
-				{
-					title: 'C#',
-					url: '',
-					image: 
-						{
-										src: '/images/csharp.png',
-										alt: 'C# icon'
-						}
-				},
-				{
-					title: '.NET',
-					url: '',
-					image: 
-						{
-										src: '/images/dotnet.png',
-										alt: '.NET icon'
-						}
-				},
-				{
-					title: 'PostgreSQL',
-					url: '',
-					image: 
-						{
-										src: '/images/postgres.png',
-										alt: 'PostgreSQL icon'
-						}
-				},
-			]
-    }
+  const blog = {
+    label: t("blog.label"),
+    title: t("blog.title"),
+    description: t("blog.description", { name: person.name }),
+    // Create new blog posts by adding a new .mdx file to app/blog/posts
+    // All posts will be listed on the /blog route
+  };
 
-    const blog = {
-        label: t("blog.label"),
-        title: t("blog.title"),
-        description: t("blog.description", {name: person.name})
-        // Create new blog posts by adding a new .mdx file to app/blog/posts
-        // All posts will be listed on the /blog route
-    }
+  const work = {
+    label: t("work.label"),
+    title: t("work.title"),
+    description: t("work.description", { name: person.name }),
+    // Create new project pages by adding a new .mdx file to app/blog/posts
+    // All projects will be listed on the /home and /work routes
+  };
 
-    const work = {
-        label: t("work.label"),
-        title: t("work.title"),
-        description: t("work.description", {name: person.name})
-        // Create new project pages by adding a new .mdx file to app/blog/posts
-        // All projects will be listed on the /home and /work routes
-    }
-
-    /* const gallery = {
-        label: t("gallery.label"),
-        title: t("gallery.title"),
-        description: t("gallery.description", {name: person.name}),
-        // Images from https://pexels.com
-        images: [
-            {
-                src: '/images/gallery/img-01.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-02.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            { 
-                src: '/images/gallery/img-03.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            { 
-                src: '/images/gallery/img-04.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-05.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-06.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-07.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-08.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-09.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-10.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            { 
-                src: '/images/gallery/img-11.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-12.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-13.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            { 
-                src: '/images/gallery/img-14.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-        ]
-    } */
-    return {
-        person,
-        social,
-        newsletter,
-        home,
-        about,
-        blog,
-        work,
-        // gallery,
-        technical
-    }
+  return {
+    person,
+    social,
+    newsletter,
+    home,
+    about,
+    blog,
+    work,
+    // gallery,
+    technical,
+  };
 };
 
 export { createI18nContent };
