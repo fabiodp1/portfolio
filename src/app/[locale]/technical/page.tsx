@@ -115,7 +115,7 @@ export default function Technical({
             justifyContent="flex-start"
             paddingTop="m"
           >
-            <Grid columns="repeat(3, 1fr)" gap="40" mobileColumns="2col">
+            <Grid columns="repeat(3, 1fr)" gap="40" mobileColumns="1col">
               {technical.skills.map((skill) => (
                 <SmartLink
                 href={skill.url}
