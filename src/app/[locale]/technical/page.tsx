@@ -92,6 +92,7 @@ export default function Technical({
       >
         <Flex direction="column" fillWidth maxWidth="s">
           <RevealFx
+            as="div"
             translateY="4"
             fillWidth
             justifyContent="flex-start"
@@ -106,6 +107,7 @@ export default function Technical({
             </Text>
           </RevealFx>
           <RevealFx
+            as="div"
             translateY="8"
             delay={0.2}
             fillWidth

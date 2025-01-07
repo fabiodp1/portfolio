@@ -89,6 +89,7 @@ export default function Home(
 						<RevealFx
 							translateY="8" delay={0.2} fillWidth justifyContent="flex-start" paddingBottom="m">
 							<Text
+								wrap="wrap"
 								onBackground="neutral-weak"
 								variant="heading-default-xl">
 								{home.subline}
