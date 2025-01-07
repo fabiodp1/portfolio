@@ -114,7 +114,7 @@ export default function Technical({
             justifyContent="flex-start"
             paddingBottom="m"
           >
-            <Grid columns="repeat(3, 1fr)" gap="40" padding="8">
+            <Grid columns="repeat(3, 1fr)" gap="40" padding="8" mobileColumns="1col">
               {technical.skills.map((skill) => (
                 <Flex>
                   <Logo
