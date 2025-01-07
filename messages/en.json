@@ -10,7 +10,7 @@
     "technical": {
         "label": "Tech skills",
         "title": "Tech skills",
-        "description": "This are the technologies that I usually play with."
+        "description": "These are the technologies that I usually play with:"
     },
     "home": {
         "label": "Home",
@@ -72,17 +72,6 @@
                 "caFoscari": {
                     "course": "Economics and Management of the Touristic Services",
                     "description": "Bachelor's Degree on management, design and planification of touristic products and systems, business management."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "Figma": {
-                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
-                },
-                "Nextjs": {
-                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
                 }
             }
         }

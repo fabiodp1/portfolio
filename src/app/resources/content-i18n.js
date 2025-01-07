@@ -134,87 +134,167 @@ const createI18nContent = (t) => {
             ]
         },
         studies: {
-            display: true, // set to false to hide this section
-            title: 'Studies',
-            institutions: [
-                {
-                    name: 'HarvardX',
-                    course: <>{t(`about.studies.institutions.HarvardX.course`)}</>,
-                    description: <>{t(`about.studies.institutions.HarvardX.description`)}</>,
-                    images: [{
-                        src: '/images/cs50.jpg',
-                        alt: 'CS50 certificate',
-                        width: 16,
-                        height: 9
-                    }]
-                },
-                {
-                    name: 'freeCodeCamp',
-                    description: <>{t(`about.studies.institutions.freeCodeCamp.description`)}</>,
-                    images: [{
-                        src: '/images/freeCodeCamp-1.png',
-                        alt: 'freeCodeCamp certificate',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/freeCodeCamp-2.png',
-                        alt: 'freeCodeCamp certificate',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/freeCodeCamp-3.png',
-                        alt: 'freeCodeCamp certificate',
-                        width: 16,
-                        height: 9
-                    }]},
-                    {
-                        name: 'Cà Foscari Univercity of Venice',
-                        course: <>{t(`about.studies.institutions.caFoscari.course`)}</>,
-                        description: <>{t(`about.studies.institutions.caFoscari.description`)}</>,
-                        images: []
-                    }
-            ]
+					display: true, // set to false to hide this section
+					title: 'Studies',
+					institutions: [
+					{
+							name: 'HarvardX',
+							course: <>{t(`about.studies.institutions.HarvardX.course`)}</>,
+							description: <>{t(`about.studies.institutions.HarvardX.description`)}</>,
+							images: [{
+									src: '/images/cs50.jpg',
+									alt: 'CS50 certificate',
+									width: 16,
+									height: 9
+							}]
+					},
+					{
+							name: 'freeCodeCamp',
+							description: <>{t(`about.studies.institutions.freeCodeCamp.description`)}</>,
+							images: [{
+									src: '/images/freeCodeCamp-1.png',
+									alt: 'freeCodeCamp certificate',
+									width: 16,
+									height: 9
+							},
+							{
+									src: '/images/freeCodeCamp-2.png',
+									alt: 'freeCodeCamp certificate',
+									width: 16,
+									height: 9
+							},
+							
+							{
+									src: '/images/freeCodeCamp-3.png',
+									alt: 'freeCodeCamp certificate',
+									width: 16,
+									height: 9
+							}]},
+							{
+									name: 'Cà Foscari Univercity of Venice',
+									course: <>{t(`about.studies.institutions.caFoscari.course`)}</>,
+									description: <>{t(`about.studies.institutions.caFoscari.description`)}</>,
+									images: []
+							}
+					]
         }
     };
 
     const technical = {
-        display: true, // set to false to hide this section
-        label: t("technical.label"),
-        title: t("about.technical.title"),
-        skills: [
-            {
-                title: 'Figma',
-                description: <>{t("about.technical.skills.Figma.description")}</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            },
-            {
-                title: 'Next.js',
-                description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            }
-        ]
+			display: true, // set to false to hide this section
+			label: t("technical.label"),
+			title: t("technical.title"),
+			description: t("technical.description"),
+			skills: [
+				{
+					title: 'Vue.js',
+					url: '',
+					image: 
+						{
+										src: '/images/vue.png',
+										alt: 'Vue.js icon'
+						}
+				},
+				{
+					title: 'TypeScript',
+					url: '',
+					image: 
+						{
+										src: '/images/typescript.png',
+										alt: 'TypeScript icon'
+						}
+				},
+				{
+					title: 'Pinia',
+					url: '',
+					image: 
+						{
+										src: '/images/pinia.png',
+										alt: 'Pinia icon'
+						}
+				},
+				{
+					title: 'React JS',
+					url: '',
+					image: 
+						{
+										src: '/images/react.png',
+										alt: 'React JS icon'
+						}
+				},
+				{
+					title: 'Next.js',
+					url: '',
+					image: 
+						{
+										src: '/images/next.png',
+										alt: 'Next.js icon'
+						}
+				},
+				{
+					title: 'MobX',
+					url: '',
+					image: 
+						{
+										src: '/images/mobx.png',
+										alt: 'MobX icon'
+						}
+				},
+				{
+					title: 'Vite',
+					url: '',
+					image: 
+						{
+										src: '/images/vite.png',
+										alt: 'Vite icon'
+						}
+				},
+				{
+					title: 'Vitest',
+					url: '',
+					image: 
+						{
+										src: '/images/vitest.png',
+										alt: 'Vitest icon'
+						}
+				},
+				{
+					title: 'Cypress',
+					url: '',
+					image: 
+						{
+										src: '/images/cypress.png',
+										alt: 'Cypress icon'
+						}
+				},
+				{
+					title: 'C#',
+					url: '',
+					image: 
+						{
+										src: '/images/csharp.png',
+										alt: 'C# icon'
+						}
+				},
+				{
+					title: '.NET',
+					url: '',
+					image: 
+						{
+										src: '/images/dotnet.png',
+										alt: '.NET icon'
+						}
+				},
+				{
+					title: 'PostgreSQL',
+					url: '',
+					image: 
+						{
+										src: '/images/postgres.png',
+										alt: 'PostgreSQL icon'
+						}
+				},
+			]
     }
 
     const blog = {

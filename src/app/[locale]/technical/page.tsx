@@ -1,4 +1,4 @@
-import { Flex } from "@/once-ui/components";
+import { Flex, Grid, Heading, Logo, RevealFx, Text } from "@/once-ui/components";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL, renderContent } from "@/app/resources";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -73,5 +73,46 @@ export default function Technical(
 					}),
 				}}
 			/>
-        </Flex>)
+
+			<Flex
+				fillWidth
+				direction="column"
+				paddingY="l" gap="m"  alignItems="center">
+					<Flex
+						direction="column"
+						fillWidth maxWidth="s">
+						<RevealFx
+							translateY="8" delay={0.2} fillWidth justifyContent="flex-start" paddingBottom="m">
+							<Text
+								wrap="balance"
+								onBackground="neutral-weak"
+								variant="heading-default-xl">
+								{technical.description}
+							</Text>
+						<Grid
+							columns="repeat(3, 1fr)"
+							gap="40"
+							padding="8"
+							marginTop="32"
+							>
+							{technical.skills.map(skill => (
+								<Flex>
+								<Logo
+								size="xl"
+								wordmark={false}
+								icon
+								iconSrc={skill.image.src}
+								href={skill.url}
+								/>
+								<Heading marginLeft="12">
+								{skill.title}	
+								</Heading>
+								</Flex>)
+							)}
+						</Grid>
+							</RevealFx>
+					</Flex>
+				</Flex>
+		</Flex>
+	)
 }
