@@ -1,6 +1,7 @@
 {
     "person": {
-        "role": "Sviluppatore Web"
+        "role": "Sviluppatore Web",
+        "location": "Italia/Padova"
     },
     "newsletter": {
         "title": "Iscriviti alla Newsletter di {firstName}",

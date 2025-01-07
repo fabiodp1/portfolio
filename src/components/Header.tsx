@@ -68,7 +68,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery, technical } = renderContent(t);
+    const { person, home, about, technical } = renderContent(t);
 
     return (
         <>
@@ -89,7 +89,7 @@ export const Header = () => {
                     textVariant="body-default-s">
                     { display.location && (
                         <Flex hide="s">
-                            {person.location}
+                            {person.timezone}
                         </Flex>
                     )}
                 </Flex>
@@ -153,7 +153,7 @@ export const Header = () => {
                         }
                         <Flex hide="s">
                             { display.time && (
-                                <TimeDisplay timeZone={person.location}/>
+                                <TimeDisplay timeZone={person.timezone}/>
                             )}
                         </Flex>
                     </Flex>
