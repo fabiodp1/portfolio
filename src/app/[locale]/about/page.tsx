@@ -355,24 +355,22 @@ export default function About(
                     </>
                 )}
 
-                <RevealFx translateY="12" delay={0.4}>
-                    <Flex fillWidth>
-                        <Button
-                        id="technical"
-                        prefixIcon="rocket"
-                        data-border="rounded"
-                        href={`/${locale}/technical`}
-                        variant="tertiary"
-                        size="m">
-                        <Flex
-                            gap="8"
-                            alignItems="center">
-                                {t("technical.label")}
-                                <Arrow trigger="#technical"/>
-                        </Flex>
-                        </Button>
+                <Flex fillWidth>
+                    <Button
+                    id="technical"
+                    prefixIcon="rocket"
+                    data-border="rounded"
+                    href={`/${locale}/technical`}
+                    variant="tertiary"
+                    size="m">
+                    <Flex
+                        gap="8"
+                        alignItems="center">
+                            {t("technical.label")}
+                            <Arrow trigger="#technical"/>
                     </Flex>
-                </RevealFx>
+                    </Button>
+                </Flex>
                 </Flex>
             </Flex>
         </Flex>
