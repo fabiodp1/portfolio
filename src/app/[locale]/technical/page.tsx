@@ -112,19 +112,24 @@ export default function Technical({
             delay={0.2}
             fillWidth
             justifyContent="flex-start"
-            paddingBottom="m"
+            paddingTop="m"
           >
-            <Grid columns="repeat(3, 1fr)" gap="40" padding="8" mobileColumns="1col">
+            <Grid columns="repeat(3, 1fr)" gap="40" mobileColumns="1col">
               {technical.skills.map((skill) => (
                 <Flex>
                   <Logo
-                    size="xl"
+                    size="l"
                     wordmark={false}
                     icon
                     iconSrc={skill.image.src}
                     href={skill.url}
                   />
-                  <Heading marginLeft="12">{skill.title}</Heading>
+                  <Text
+                    wrap="balance"
+                    marginLeft="12"
+                    onBackground="neutral-weak"
+                    variant="heading-default-xl"
+                  ><strong>{skill.title}</strong></Text>
                 </Flex>
               ))}
             </Grid>
